@@ -1,7 +1,7 @@
 repl-lang
 =========
 
-REPL languages
+the REPL language
 
 ### Why REPL?
 

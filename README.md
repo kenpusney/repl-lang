@@ -13,6 +13,13 @@ cd repl-lang && ./repl
 ### Examples
 
 ```ruby
+
+# make expression
 make :love
 # => "I am making love"
+
+# polish notation and `&` operator
+:make & :love
+:new & Object
+:+.& 1,2
 ```

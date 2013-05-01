@@ -7,7 +7,7 @@ REPL languages
 
 > 'Cause many languages do not have a REPL.
 
-  * see [Why REPL](/kenpusney/repl-lang/wiki/Why-REPL) for more information
+  * see [Why REPL](https://github.com/kenpusney/repl-lang/wiki/Why-REPL) for more information
 
 ### Install
 

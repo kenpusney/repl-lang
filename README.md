@@ -3,6 +3,10 @@ repl-lang
 
 REPL languages
 
+### Why REPL?
+
+> 'Cause many languages do not have a REPL.
+
 ### Install
 
 ```shell

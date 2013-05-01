@@ -1,1 +1,1 @@
-@call irb -I. -repl
+@call irb -Ilib -repl

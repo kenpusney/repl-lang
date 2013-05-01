@@ -1,0 +1,1 @@
+@call irb -Ilib -rrepl/uglisp

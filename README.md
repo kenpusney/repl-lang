@@ -29,3 +29,17 @@ make :love
 :new & Object
 :+.& 1,2
 ```
+
+### uglisp
+
+```ruby
+require 'repl/uglisp'
+(:list.& 1,2,3,4)
+#=> [1,2,3,4]
+
+(:car.& (:list.& 1,2,3,4))
+#=> 1
+
+(:cdr.& (:list.& 1,2,3,4))
+#=> [2,3,4]
+```

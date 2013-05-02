@@ -1,3 +1,12 @@
+
+=begin
+```ruby
+make(sth,&block) #=>sth.new     (class?)
+                 #  sth.make    (obj?)
+                 #  block[sth]  (block?)
+                 #  sth
+```
+=end
 module Kernel
     def make(e,&block)
         begin

@@ -5,18 +5,18 @@ require 'repl/polish'
 ## Usage
 
 ```ruby
-    c = :type.&({
-            #supporting :attr_reader/writer/accessor
-            attr_reader: [:x,:y,:z],
-            init: ->(){     #for `initialize`
-                    @x = 1
-                    @y = 2
-                    @z = 3
-                }
-        #Specify superclass
-        },Object)
-    z = c.new
-    puts z.x,z.y,z.z,z.superclass
+c = :type.&({
+        #supporting :attr_reader/writer/accessor
+        attr_reader: [:x,:y,:z],
+        init: ->(){     #for `initialize`
+                @x = 1
+                @y = 2
+                @z = 3
+            }
+    #Specify superclass
+    },Object)
+z = c.new
+puts z.x,z.y,z.z,z.superclass
 ```
 
 =end

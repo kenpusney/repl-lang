@@ -8,14 +8,6 @@
   * Ruby-Enlighted Programming Language
   * **Ruby's Endless Programming Language**
 
-## `endless`
-
-  * lambda literal
-  * type/class literal(`repl/type`)
-  * `?:` / `and` / `or` instead of `if..else`
-  * modifier expression(`if`/`while`/`unless`/`until`)
-  
-
 =end
 
 

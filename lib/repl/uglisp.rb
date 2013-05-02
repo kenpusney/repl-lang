@@ -1,6 +1,9 @@
 require 'repl/polish'
 require 'repl/envy'
 
+=begin
+
+=end
 
 class Object
 
@@ -38,6 +41,6 @@ class Array
 end
 
 undef list
-undef car
-undef cdr
-undef cons
+#undef car
+#undef cdr
+#undef cons

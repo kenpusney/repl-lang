@@ -11,5 +11,6 @@ k = :type.&({
 z = k.new 1
 
 z.x = 2
+z.z = 3
 ## invokes method.
-puts z.x
+puts z.x,z.z,k.superclass

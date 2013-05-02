@@ -22,33 +22,24 @@ require 'repl/polish'
 =end
 class Hash
     def type(*parent)
-        klass = {}
-        konfig = {}
-        self.each do |k,v|
-            klass[k] = v
-        end
         parent = parent.empty? ? Object : parent[0]
+        klass = self
         return Class.new(parent) do
             klass.each do |k,v|
-                if v.class == Array
-                    v.each do |val|
-                        case k
-                            when :attr_reader 
-                                attr_reader val
-                            when :attr_writer 
-                                attr_writer val
-                            when :attr_accessor 
-                                attr_accessor val
+                v.class == Array and v.each do |val|
+                            case k
+                                when :attr_reader 
+                                    attr_reader val
+                                when :attr_writer 
+                                    attr_writer val
+                                when :attr_accessor 
+                                    attr_accessor val
+                            end
                         end
-                    end
-                elsif v.class == Proc
-                    define_method(k,&v)
-                end
+                v.class == Proc and define_method(k,&v)
             end
             def initialize(*args)
-                if self.respond_to? :init
-                    self.init(*args)
-                end
+                self.init(*args) if self.respond_to? :init
             end
         end
     end

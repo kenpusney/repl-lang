@@ -1,4 +1,6 @@
 require 'repl/polish'
+require 'repl/envy'
+
 
 class Object
 
@@ -19,6 +21,7 @@ class Object
     def cons(e)
         [self,e]
     end
+    
 end
 
 class Array

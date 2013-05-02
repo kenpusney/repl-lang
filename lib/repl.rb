@@ -10,3 +10,6 @@ require 'repl/polish'
 
 #  ugly lisp
 require 'repl/uglisp'
+
+#  simplified class literal
+require 'repl/class'

@@ -6,7 +6,7 @@ class Symbol
     
     def &(e,*all,&block)
         if e.respond_to? self
-            return e.method(self).call *all[0..(e.method(self).arity-1)],&block
+            return e.method(self).call *all[0..(e.method(self).arity)],&block
         elsif block
             return block.call e,*all
         end

@@ -1,4 +1,4 @@
 
 
-# use `irb -repl` replace `irb -rrepl`
+# use `-repl` replace `-rrepl`
 require "repl"

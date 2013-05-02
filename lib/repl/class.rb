@@ -1,6 +1,4 @@
 
-require 'repl/polish.rb'
-
 class Hash
     def classify
         klass = {}

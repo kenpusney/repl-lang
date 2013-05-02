@@ -1,4 +1,22 @@
 
+=begin
+
+## What is REPL
+
+  * (loop (print (eval (read))))
+  * Read-Eval-Print Loop
+  * Ruby-Enlighted Programming Language
+  * **Ruby's Endless Programming Language**
+
+## `endless`
+
+  * lambda literal
+  * type/class literal(`repl/type`)
+  * `?:` / `and` / `or` instead of `if..else`
+  * modifier expression(`if`/`while`/`unless`/`until`)
+  
+
+=end
 
 
 #  `envy` extension for `Object`

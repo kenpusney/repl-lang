@@ -1,6 +1,6 @@
 
 class Hash
-    def classify
+    def type
         klass = {}
         self.each do |k,v|
             klass[k] = v
@@ -16,4 +16,6 @@ class Hash
             end
         end
     end
+    
+    alias_method :classify,:type
 end

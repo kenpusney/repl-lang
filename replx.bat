@@ -1,1 +1,2 @@
-@ruby -Ilib -repl %1
+@shift
+@ruby -Ilib -repl %*

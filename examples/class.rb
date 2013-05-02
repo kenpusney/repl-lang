@@ -1,6 +1,6 @@
 
 ## define a new class:
-k = :classify.&({
+k = :type.&({
         init:   ->(x){  @x = x },
         x:      ->(){ @x },
     })

@@ -1,1 +1,1 @@
-@call irb -Ilib -rrepl/uglisp
+@call irb -I../lib -rrepl/uglisp

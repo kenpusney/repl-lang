@@ -1,2 +1,2 @@
 @shift
-@call irb -Ilib -repl %*
+@call irb -I../lib -repl %*

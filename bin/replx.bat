@@ -1,2 +1,2 @@
 @shift
-@ruby -Ilib -repl %*
+@ruby -I../lib -repl %*

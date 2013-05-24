@@ -14,4 +14,13 @@ class Symbol
         end
         [e].concat all
     end
+            
+    def invoke(sym)
+        if sym.class == Symbol and self.respond_to? sym
+            self.method(sym)
+        end
+    end
+    
+    alias_method :%,:invoke
+
 end
